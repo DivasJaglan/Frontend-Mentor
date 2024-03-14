@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --grey: hsl(0, 0%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(75, 94%, 57%);
+  --off-black: hsl(0, 0%, 8%);
+  --dark-grey: hsl(0, 0%, 12%);
+}
+
+/* Weights: 400, 600, 700 */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  background-color: var(--off-black);
+}
+
+.container {
+  gap: 10px;
+  padding: 25px;
+  display: flex;
+  max-width: 300px;
+  max-height: 800px;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dark-grey);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.address {
+  font-size: 12px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  color: var(--green);
+}
+
+.work {
+  font-size: 12px;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.skills {
+  gap: 12px;
+  display: flex;
+  color: var(--white);
+  flex-direction: column;
+}
+.skills li {
+  height: 35px;
+  width: 250px;
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey);
+}
+
+li:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
+
+.attribution {
+  gap: 5px;
+  display: flex;
+  font-size: 11px;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--white);
+  flex-direction: column;
+}
+
+.attribution a {
+  cursor: pointer;
+  color: hsl(228, 45%, 44%);
+}
