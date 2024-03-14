@@ -85,3 +85,46 @@ p {
   cursor: pointer;
   font-weight: 800;
 }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 280px;
+    min-height: 430px;
+    max-height: 514px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .banner {
+    max-width: 260px;
+  }
+
+  .cardName {
+    max-width: 72px;
+    max-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 0 2px 0;
+  }
+
+  .publishDate {
+    font-size: 15px;
+  }
+
+  .heading {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .avatarName {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+}
