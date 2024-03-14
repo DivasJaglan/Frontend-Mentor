@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 360px;
+  min-height: 505px;
+  max-height: 514px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  padding-left: 21px;
+  margin-top: 7%;
+  padding-top: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 8px 8px;
+}
+
+.banner {
+  border-radius: 10px;
+  max-width: 318px;
+}
+
+.cardName {
+  border-radius: 5px;
+  max-width: 85px;
+  max-height: 40px;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  font-weight: 800;
+  background-color: var(--yellow);
+  display: block;
+}
+
+.publishDate {
+  font-weight: 500;
+}
+
+.heading {
+  display: block;
+  font-weight: 800;
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+p {
+  color: var(--grey);
+}
+
+.avatarBox {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  max-width: 35px;
+}
+
+.avatarName {
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+  font-weight: 800;
+}
