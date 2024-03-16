@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --nutmeg: hsl(14, 45%, 36%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-Grey: hsl(30, 18%, 87%);
+  --wenge-Brown: hsl(30, 10%, 34%);
+  --rose-White: hsl(330, 100%, 98%);
+  --dark-Charcoal: hsl(24, 5%, 18%);
+  --dark-Raspberry: hsl(332, 51%, 32%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-Charcoal);
+  background-color: var(--eggshell);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  width: 60vw;
+  margin: 15vh 0;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.content {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5vw 2.5vw 10px 2.5vw;
+}
+
+.omelette {
+  width: 55vw;
+  border-radius: 10px;
+  margin: 2.5vw 2.5vw 0px 2.5vw;
+}
+
+h1 {
+  font-size: 3vmax;
+  font-weight: 400;
+  font-family: "Young Serif", serif;
+}
+
+.preparation {
+  padding: 20px 0 20px 30px;
+  background-color: var(--rose-White);
+}
+
+.preparation ul {
+  list-style-type: disc;
+  padding: 10px 0 0 20px;
+}
+
+.preparation ul li {
+  padding: 0 0 10px 10px;
+}
+
+.prepHeading {
+  font-weight: 700;
+  color: var(--dark-Raspberry);
+}
+
+.subHeading {
+  font-weight: 600;
+  margin-right: 3px;
+  color: var(--wenge-Brown);
+}
+
+.heading {
+  font-size: 2vmax;
+  font-weight: 400;
+  color: var(--nutmeg);
+  font-family: "Young Serif", serif;
+}
+
+.ingredients ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.ingredients ul li {
+  padding-left: 10px;
+  padding: 0 0 10px 10px;
+}
+
+.hr {
+  margin-top: -10px;
+  border-top: 1px solid var(--light-Grey);
+}
+
+hr {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-top: 1px solid var(--light-Grey);
+}
+
+.instructions ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  list-style-type: decimal;
+}
+
+.instructions ul li::marker {
+  font-weight: 700;
+  color: var(--nutmeg);
+}
+
+.instructions ul li {
+  padding: 0 0 10px 10px;
+}
+
+.nutritions {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nutritionName {
+  width: 100px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.nutritionValue {
+  font-weight: 600;
+  margin-left: 210px;
+  color: var(--nutmeg);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+  h1 {
+    font-size: 5vmax;
+  }
+
+  .heading {
+    font-size: 4vmax;
+  }
+  .container {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .omelette {
+    margin: 0;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .nutritionValue {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 325px) {
+  .nutritionValue {
+    margin-left: 50px;
+  }
+}
