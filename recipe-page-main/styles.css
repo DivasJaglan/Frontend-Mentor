@@ -11,128 +11,127 @@
 }
 
 body {
-  height: 250vh;
   display: flex;
   align-items: center;
+  padding: 10% 20%;
   justify-content: center;
+  color: var(--dark-Charcoal);
   background-color: var(--eggshell);
   font-family: "Outfit", sans-serif;
-  color: var(--dark-Charcoal);
 }
 
 .container {
-  width: 50vw;
-  background-color: var(--white);
   border-radius: 20px;
+  background-color: var(--white);
+  padding: 2rem 2rem 0.6rem 2rem;
 }
 
 .content {
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 2.5vw 2.5vw 10px 2.5vw;
 }
 
 .omelette {
-  width: 45vw;
-  margin: 2.5vw 2.5vw 0px 2.5vw;
   border-radius: 10px;
 }
 
 h1 {
-  /* font-size: 34px; */
-  font-size: 3vmax;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: "Young Serif", serif;
 }
 
+p {
+  font-size: 1rem;
+}
 .preparation {
+  padding: 1.5rem;
   background-color: var(--rose-White);
-  padding: 20px 0 20px 30px;
 }
 
 .preparation ul {
   list-style-type: disc;
-  padding: 10px 0 0 20px;
+  padding: 0.5rem 0 0 1.5rem;
 }
 
 .preparation ul li {
-  padding: 0 0 10px 10px;
+  padding: 0 0 0.6rem 0.6rem;
 }
 
 .prepHeading {
-  color: var(--dark-Raspberry);
   font-weight: 700;
+  color: var(--dark-Raspberry);
 }
 
 .subHeading {
   font-weight: 600;
+  margin-right: 0.5rem;
   color: var(--wenge-Brown);
-  margin-right: 3px;
 }
 
 .heading {
-  font-size: 25px;
-  font-family: "Young Serif", serif;
-  color: var(--nutmeg);
+  font-size: 1.8rem;
   font-weight: 400;
+  color: var(--nutmeg);
+  font-family: "Young Serif", serif;
 }
 
 .ingredients ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
   list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 20px;
 }
 
 .ingredients ul li {
-  padding-left: 10px;
-  padding: 0 0 10px 10px;
+  padding-left: 0.6rem;
+  padding: 0 0 0.6rem 0.6rem;
 }
 
 .hr {
-  margin-top: -10px;
   border-top: 1px solid var(--light-Grey);
 }
 
 hr {
   border-top: 1px solid var(--light-Grey);
-  margin-top: -10px;
-  margin-bottom: -10px;
 }
 
 .instructions ul {
-  margin-top: 20px;
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
   list-style-type: decimal;
-  padding-left: 20px;
 }
 
 .instructions ul li::marker {
-  color: var(--nutmeg);
   font-weight: 700;
+  color: var(--nutmeg);
 }
 
 .instructions ul li {
-  padding: 0 0 10px 10px;
+  padding: 0 0 0.7rem 0.6rem;
 }
 
 .nutritions {
+  gap: 0.6rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
+.nutritions p {
+  margin: 0.7rem 0;
+}
 .nutritionName {
+  width: 6rem;
+  margin-left: 2rem;
   display: inline-block;
-  width: 100px;
-  margin-left: 30px;
 }
 .nutritionValue {
-  color: var(--nutmeg);
-  margin-left: 210px;
   font-weight: 600;
+  margin-left: 13rem;
+  color: var(--nutmeg);
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 .attribution a {
@@ -140,46 +139,37 @@ hr {
   font-weight: 600;
 }
 
-@media (max-width: 1024px) {
-  body {
-    height: 350vh;
-  }
-}
-
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   body {
     display: block;
+    padding: 0;
   }
-  /* h1 {
-    font-size: 5vh;
-  } */
+  h1 {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
   .container {
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
+    border-radius: 0;
+    padding: 0;
+  }
+  .content {
+    padding: 2rem 2rem 0.6rem 2rem;
   }
   .omelette {
-    width: 100%;
-    margin: 0;
-    border-radius: 0px;
+    border-radius: 0;
+    padding: 0;
   }
 
   .nutritionValue {
-    margin-left: 110px;
+    margin-left: 7rem;
   }
 }
 
-@media (max-width: 320px) {
-  h1 {
-    /* font-size: 30px; */
-  }
-  .container {
-    height: 105%;
-  }
-  .heading {
-    /* font-size: 20px; */
-  }
+@media (max-width: 368px) {
   .nutritionValue {
-    margin-left: 50px;
+    margin-left: 3rem;
   }
 }
