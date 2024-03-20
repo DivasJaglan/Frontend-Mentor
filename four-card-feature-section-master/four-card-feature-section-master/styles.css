@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --blue: hsl(212, 86%, 64%);
+  --orange: hsl(34, 97%, 64%);
+  --grayish-Blue: hsl(229, 6%, 66%);
+  --very-Light-Gray: hsl(0, 0%, 98%);
+  --very-Dark-lue: hsl(234, 12%, 34%);
+}
+
+body {
+  padding: 5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--very-Light-Gray);
+}
+.container {
+  gap: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-Light-Gray);
+}
+
+.head {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.head .character {
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: var(--very-Dark-lue);
+}
+
+.head .poweredBy {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--very-Dark-lue);
+}
+
+.head .description {
+  font-size: 1.1rem;
+  color: var(--grayish-Blue);
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--very-Dark-lue);
+}
+.cards,
+.middle-content {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 0.7rem;
+}
+
+.cardContent {
+  gap: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.hr1 {
+  border-top: 0.3rem solid var(--cyan);
+}
+.hr2 {
+  border-top: 0.3rem solid var(--red);
+}
+.hr3 {
+  border-top: 0.3rem solid var(--orange);
+}
+.hr4 {
+  border-top: 0.3rem solid var(--blue);
+}
+
+.card .definition {
+  font-size: 1.1rem;
+  color: var(--grayish-Blue);
+}
+
+.card img {
+  width: 4.5rem;
+  margin-top: 3rem;
+}
+
+.img {
+  text-align: right;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  font-weight: 700;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-1,
+  .card-4 {
+    align-self: center;
+  }
+}
