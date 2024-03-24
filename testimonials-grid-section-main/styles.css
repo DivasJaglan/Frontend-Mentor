@@ -12,6 +12,7 @@
 body {
   gap: 1rem;
   display: flex;
+  height: 100%;
   padding: 5rem 2rem;
   font-size: 0.813rem;
   flex-direction: column;
@@ -21,7 +22,7 @@ body {
 }
 
 .container {
-  gap: 1.25rem;
+  gap: 1.75rem;
   display: flex;
   flex-direction: column;
 }
@@ -43,7 +44,7 @@ body {
 }
 
 .testimonial .feedback {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--white);
 }
@@ -55,7 +56,7 @@ body {
 }
 
 .testimonial {
-  gap: 1.25rem;
+  gap: 1rem;
   display: flex;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -137,8 +138,8 @@ body {
   }
 
   body {
+    padding: 10rem;
     display: flex;
-    padding: 5% 8%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
