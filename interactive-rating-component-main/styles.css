@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Orange: hsl(25, 97%, 53%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--White);
+}
+
+main {
+  gap: 1rem;
+  display: flex;
+  min-width: 20rem;
+  max-width: 25rem;
+  border-radius: 2rem;
+  flex-direction: column;
+  background: linear-gradient(
+    45deg,
+    #252d37,
+    #20272f,
+    #1c2027,
+    #171a1e,
+    #12141f
+  );
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+
+form {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  text-align: left;
+}
+.star img {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+}
+
+p {
+  font-size: 0.825rem;
+  color: var(--Medium-Grey);
+}
+
+form ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+form ul li button {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--Medium-Grey);
+  background-color: hsla(213, 19%, 18%, 1);
+}
+
+form ul li button:hover {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+form ul li button:focus {
+  color: var(--White);
+  background-color: hsla(255, 100%, 100%, 0.4);
+}
+
+#submit-btn {
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--White);
+  font-size: 0.938rem;
+  border-radius: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  background-color: var(--Orange);
+}
+
+#submit-btn:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+#feedback {
+  gap: 1.5rem;
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rating-description {
+  width: 15rem;
+  padding: 0.5rem 0;
+  border-radius: 2rem;
+  color: var(--Orange);
+  background-color: var(--Dark-Blue);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  font-weight: bold;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 658px) {
+  form ul li button {
+    width: 50px;
+    height: 50px;
+  }
+}
