@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+}
+
+body {
+  height: 100%;
+  display: flex;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-mobile.svg");
+}
+
+.card {
+  padding: 0;
+  max-width: 370px;
+  border-radius: 1.5rem;
+  background-color: var(--Very-pale-blue);
+}
+main {
+  gap: 1.5rem;
+  display: flex;
+  padding: 1.5rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--Dark-blue);
+}
+
+p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.plan-card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  justify-content: space-between;
+  background-color: hsla(225, 100%, 94%, 0.3);
+}
+
+.music-plan-price {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan {
+  font-weight: 700;
+  color: var(--Dark-blue);
+}
+
+.price {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.change {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--Bright-blue);
+  text-decoration: underline;
+}
+
+.payment-button {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border-radius: 0.8rem;
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  box-shadow: 0px 26px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button {
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--Desaturated-blue);
+}
+.attribution {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+  flex-direction: column;
+}
+.attribution a {
+  font-weight: bold;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
