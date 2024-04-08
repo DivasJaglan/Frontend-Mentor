@@ -9,10 +9,8 @@
 }
 
 body {
-  height: 100%;
   display: flex;
   padding: 4rem 2rem;
-  align-items: center;
   justify-content: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -23,12 +21,12 @@ body {
 
 .card {
   padding: 0;
-  max-width: 370px;
+  max-width: 445px;
   border-radius: 1.5rem;
   background-color: var(--Very-pale-blue);
 }
 main {
-  gap: 1.5rem;
+  gap: 1rem;
   display: flex;
   padding: 1.5rem;
   text-align: center;
@@ -118,6 +116,13 @@ p {
 
 @media (min-width: 768px) {
   body {
+    padding: 0;
+    min-height: 100vh;
+    align-items: center;
     background-image: url("./images/pattern-background-desktop.svg");
+  }
+  main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
